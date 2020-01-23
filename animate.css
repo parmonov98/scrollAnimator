@@ -1,5 +1,5 @@
 /*!
- * animate.css -https://parmonov98.github.io/animate.css/
+ * animate.css -https://parmonov98.github.io/animate/
  * Version - 1.0.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
@@ -54,11 +54,7 @@
    animation-fill-mode: forwards;
 }
 
-.turn-over-top{
-   visibility: visible;
-   opacity: 1;
-   animation-name: turn-over-top;
-}
+
 .skew{
    visibility: visible;
    opacity: 1;
