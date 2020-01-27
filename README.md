@@ -1,7 +1,7 @@
 # scrollAnimator
  Page scrollAnimator in VanillaJS
 
-Example
+<h3>Example</h3>
 
 birinchi o'rinda animate.css ichida joylashgan odat ko'p ishlatiladigan effectlar uchun classlar yaratilgan. 
  fade-in, to-left, to-top, to-right, to-bottom, skew, pop-up
