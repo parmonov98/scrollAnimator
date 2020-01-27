@@ -13,11 +13,11 @@ animate class standart class uni barcha scrollAnimator ishlatiladigan elementlar
 
 endi esa kerakli animatsiya nomini data-animations="bu yerga"  yozamiz va elementga biriktiramiz.
 <pre>
-`
+```
 <div class="features__items_i animate" data-animations=" to-right">
   here your code goes.
 </div>
-`
+```
 </pre>
 
 
