@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollAnimator in VanillaJS</title>
+    <link rel="stylesheet" href="../animate.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec1 animate to-bottom">
+        <h2>Title h2</h2>
+        <div class="content">content text</div>
+    </section>
+    <section class="sec2 animate" data-animations="to-right" data-offset="200">
+        <h2>Title h2</h2>
+        <div class="content">content text</div>
+    </section>
+    <section class="sec3 animate" data-animations="to-left" data-offset="600">
+        <h2>Title h2</h2>
+        <div class="content">content text</div>
+    </section>
+    <section class="sec4" data-offset="1000">
+        <h2 class="animate" data-animations="fade-in">Title h2</h2>
+        <div class="content animate" data-animations="fade-in s-2">content text</div>
+    </section>
+    <section class="sec6" data-offset="1400" >
+        <div class="view-3d">        
+            <div class="skew-container animate" data-animations="skew">
+                <h2 class="animate" data-animations="pop-up s-1">Title h2</h2>
+                <div class="content">content text</div>
+            </div>
+        </div>
+    </section>
+    <section class="sec5" data-offset="1600">
+        <h2 class="animate" data-animations="pop-up s-1">Title h2</h2>
+        <div class="content">content text</div>
+    </section>
+
+    <script src="../animate.js"></script>
+
+    <script>
+    const a = new animate(true);   // false ni jo'nating productio rejimda. :)
+    </script>
+</body>
+</html>
