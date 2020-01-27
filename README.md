@@ -11,6 +11,8 @@ Foydalanish:
 birinchi o'rinda kerakli animatsiyani biz elementga biriktiramiz.
 animate class standart class uni barcha scrollAnimator ishlatiladigan elementlarga qo'shamiz.
 
+
+
 endi esa kerakli animatsiya nomini data-animations="bu yerga"  yozamiz va elementga biriktiramiz.
 
 ```HTML
@@ -31,3 +33,5 @@ kerakli elementlarni ushlab turadigan parent(ota) elementga `data-offset="100"` 
 ```
 
 **animate.js** faylini ulang va **animate**  obyektini hosil qiling.
+
+demo fayllar demo papkasida joylashgan.
