@@ -46,6 +46,7 @@ va so'nggi qadam bu asosiy JS kutubxonani ulash.
 **animate.js** faylini ulang va **animate**  obyektini hosil qiling.
 
 Demo fayl **demo** papkasida joylashgan.
+yoki https://parmonov98.github.io/scrollAnimator/demo/
 
 
 
