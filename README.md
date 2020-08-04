@@ -58,7 +58,12 @@ demo fayllar demo papkasida joylashgan.
 </script>
 ```
 
-#DEBUG mode ni yoqib kerakli animatsiyalarni sozlab olgandan keyin oddiy modega o'tkizing.
+#DEBUG(SETUP) mode ni yoqib kerakli animatsiyalarni sozlab olgandan keyin oddiy modega o'tkizing.
 
 
 Agar o'zingizni animatsiya effektlarizni qo'shmoqchi bo'lsangiz, marhamat, **src** papka ichidagi **animate.css** fayldagi effektlar qo'shib push request qiling. 
+
+
+Ayni vaqtdagi qilinishi kerak ishlar:
+1. Animatsiya effektlarini yaratish/ko'paytirish.
+2. Turli xil o'lchamli ekranlarda ham bir xil natija olish yoki yondashuvni o'zgartirish orqali animatsiya ishga tushish vaqtini aniq sozlash sifatini oshirish.
