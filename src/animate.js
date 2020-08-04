@@ -10,6 +10,9 @@ class animate{
         this.setAllScreens();
 
         window.addEventListener('scroll', (e) => {
+            // console.log(e.view.screenY);
+            // console.log(e.view.pageY);
+            // console.log(window.scrollY);
             if (this.DEBUG) {
                 console.log(e);
                 //console.log(e.path[1].pageYOffset);
@@ -17,13 +20,19 @@ class animate{
                 console.log(test);            
             }
             document.querySelector(`[data-offset="${this.offsets[0]}"]`);
+            let path = {};
+            path.pageY = window.scrollY || e.path[1].pageYOffset;
+            
+            if (path) {
 
-            for (let i = 0; i < this.offsets.length; i++) {
-                const offset = this.offsets[i];
-                if(offset <= e.path[1].pageYOffset || offset <= e.pageY){
-                    this.animateScreen(document.querySelector(`[data-offset="${this.offsets[i]}"]`));
+                for (let i = 0; i < this.offsets.length; i++) {
+                    const offset = this.offsets[i];
+                    if(offset <= path.pageY){
+                        this.animateScreen(document.querySelector(`[data-offset="${this.offsets[i]}"]`));
+                    }
                 }
             }
+            
         });
     }
 

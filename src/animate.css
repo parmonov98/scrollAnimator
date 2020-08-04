@@ -1,0 +1,184 @@
+/*!
+ * animate.css -https://parmonov98.github.io/animate/
+ * Version - 1.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2020 Murod Parmonov
+ */
+/* .animate  => direction : to-top | to-left | to-right | to-bottom */
+
+
+ .animate{
+    visibility: hidden;
+    opacity: 0;
+ }
+
+ .view-3d{
+   transform-origin: center;
+   perspective: 100%;
+ }
+
+.fade-in{
+   visibility: visible;
+   animation-name: fade-in;
+   animation-duration: .5s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+}
+
+.pop-up{
+   animation: pop-up .3s;
+   animation-fill-mode: forwards;
+   visibility: visible;
+}
+
+.to-top{
+   animation: to-top 1s ease-out;
+   animation-fill-mode: forwards;
+}
+
+
+.to-bottom{
+   animation: to-bottom 1s ease-out;
+   animation-fill-mode: forwards;
+}
+
+
+.to-right{
+   animation: to-right 1s ease-out;
+   animation-fill-mode: forwards;
+}
+
+.to-left{
+   animation: to-left 1s ease-out;
+   animation-fill-mode: forwards;
+}
+
+
+.skew{
+   visibility: visible;
+   opacity: 1;
+   animation-name: skew;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+.s-1{
+   animation-duration: 1s;
+   animation-delay: 1s;
+}
+
+.s-2{
+   animation-delay: 2s;
+   animation-duration: 1s;
+}
+
+.s-3{
+   animation-delay: 3s;
+   animation-duration: 1s;
+}
+
+.s-4{
+   animation-delay: 4s;
+   animation-duration: 1s;
+}
+
+.s-5{
+   animation-delay: 5s;
+   animation-duration: 1s;
+}
+
+
+
+@keyframes fade-in{
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+
+@keyframes pop-up{
+   0%{
+      opacity: 1;
+      transform: scale(1);
+   }
+   50%{
+      opacity: 1;
+      transform: scale(1.2);
+   }
+   100%{
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+@keyframes turn-over{
+   from{
+      transform: rotate(0px, 100px);
+   }
+   to{
+      bottom: -100%;
+      transform: rotate(0px, 0px);
+   }
+}
+
+
+@keyframes to-top{
+   from{
+      
+      transform: translate3d(0px, 50px, 0);
+   }
+   to{
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+      opacity: 1;
+   }
+}
+
+@keyframes to-bottom{
+   from{
+      transform: translate3d(0%, -100%, 0);
+   }
+   to{
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+@keyframes to-right{
+   from{
+      display: inline-block;
+      transform: translate(-100%, 0px);
+   }
+   to{
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0);
+   }
+}
+
+@keyframes to-left{
+   from{
+      transform: translate(100%, 0px);
+   }
+   to{
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(0, 0);
+   }
+}
+
+@keyframes skew{
+   from{
+      transform: scale(1) 1s rotate3d(1, 1, 1, 0deg) ;
+      
+   }
+   to{
+      visibility: visible;
+      opacity: 1;
+      transform: scale(.7) rotate3d(1, 1, -1, 45deg) translateY(-50px) ;
+   }
+}
