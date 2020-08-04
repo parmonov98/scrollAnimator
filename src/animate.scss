@@ -7,6 +7,34 @@
  */
 /* .animate  => direction : to-top | to-left | to-right | to-bottom */
 
+.pageYOffset{
+   position: fixed;
+   display: inline-block;
+   min-height: 48px;
+   font-size: 2em;
+   line-height: 2em;
+   background-color: rgb(129, 8, 8);
+   z-index: 999;
+   top: 0;
+   left: 0;
+   padding: 5px 10px;
+   color: #fff;
+}
+.modal-alert{
+   position: fixed;
+   display: block;
+   width: 100%;
+   min-height: 48px;
+   font-size: 2em;
+   line-height: 2em;
+   background-color: rgb(129, 8, 8);
+   z-index: 999;
+   bottom: 0%;
+   left: 0%;
+   // transform: translateY(-25%);
+   padding: 5px 10px;
+   color: #fff;
+}
 
  .animate{
     visibility: hidden;
@@ -60,6 +88,12 @@
    opacity: 1;
    animation-name: skew;
    animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+.glitch{
+   animation-name: glitch;
+   animation-duration: .2s;
    animation-fill-mode: forwards;
 }
 
@@ -180,5 +214,26 @@
       visibility: visible;
       opacity: 1;
       transform: scale(.7) rotate3d(1, 1, -1, 45deg) translateY(-50px) ;
+   }
+}
+
+@keyframes glitch{
+   0%{
+      transform: translateX(0%);      
+      
+   }
+   25%{
+      transform: translateX(-50%);      
+      visibility: visible;
+      opacity: 1;
+   }
+   50%{
+      transform: translateX(0%);      
+   }
+   75%{
+      transform: translateX(50%);      
+   }
+   100%{
+      transform: translateX(0%);      
    }
 }

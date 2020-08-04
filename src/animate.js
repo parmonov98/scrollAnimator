@@ -9,15 +9,20 @@ class animate{
         this.screens = []; // screens's sizes  
         this.setAllScreens();
 
+        
+        this.span = document.createElement('span');
+        this.span.classList.add('pageYOffset');
+        this.span.setAttribute('title', `PXs value to animate a section/s after a user scrolls X PXs down.`);
+        this.span.appendChild(document.createTextNode(`scroll to see window.pageYOffset value`));
+        console.log(`Are you debugging?: ${this.DEBUG}`);
+        if (this.DEBUG === true) {            
+            document.body.appendChild(this.span);
+        }
         window.addEventListener('scroll', (e) => {
-            // console.log(e.view.screenY);
-            // console.log(e.view.pageY);
-            // console.log(window.scrollY);
             if (this.DEBUG) {
-                console.log(e);
-                //console.log(e.path[1].pageYOffset);
-                const test = document.querySelector(`[data-offset="${this.offsets[0]}"]`);
-                console.log(test);            
+                // console.log(e);
+                // const test = document.querySelector(`[data-offset="${this.offsets[0]}"]`);
+                this.span.textContent = window.pageYOffset;                
             }
             document.querySelector(`[data-offset="${this.offsets[0]}"]`);
             let path = {};
@@ -76,7 +81,9 @@ class animate{
 
 
     setAllScreens(){
+
         this.screens = document.querySelectorAll("[data-offset]");
+        console.log(this.screens);
         if (this.DEBUG) {
             console.log(this.screens);
         }
@@ -86,7 +93,15 @@ class animate{
         for (let i = 0; i < this.screens.length; i++) {
             attrs[i] = this.screens[i].getAttribute('data-offset');
         }
-
+        if (attrs.length === 0) {
+            console.log(0);
+            const alert = document.createElement('div');
+            alert.classList.add('animate');
+            alert.classList.add('modal-alert');
+            alert.appendChild(document.createTextNode('You have not used any animation of scrollAnimator. You need to unlink the lib, if you don`t use it!'));
+            document.body.appendChild(alert);
+            document.querySelector('.modal-alert').classList.add('pop-up');
+        }
         this.offsets = attrs;       
             
     }
@@ -97,9 +112,9 @@ class animate{
         }
         
         const elements = screen.querySelectorAll('[data-animations]');
-
+        console.log(elements);
         if(elements.length === 0){
-            console.log(screen);            
+            // console.log(screen);            
             if(screen.getAttribute('data-animations').trim() != ''){
                 const classNames = screen.getAttribute('data-animations');
                 
@@ -119,7 +134,19 @@ class animate{
             if (this.DEBUG) {
                 console.log(elements);
             }
-            
+            console.log(screen);
+            if (screen.hasAttribute('data-animations')) {
+                const classNames = screen.getAttribute('data-animations');
+                
+                let classes = classNames.split(' ');
+                classes.forEach(className => {
+                    if (!screen.classList.contains(className)) {
+                        screen.className += ' ' + className;
+                        screen.setAttribute('data-animations', '');
+                    }
+                });
+            }
+
             elements.forEach(el => {
                 
             if(el.getAttribute('data-animations').trim() != ''){
