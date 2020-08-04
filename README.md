@@ -63,6 +63,11 @@ demo fayllar demo papkasida joylashgan.
 
 Agar o'zingizni animatsiya effektlarizni qo'shmoqchi bo'lsangiz, marhamat, **src** papka ichidagi **animate.css** fayldagi effektlar qo'shib push request qiling. 
 
+Proyekt uchun ishlatilgan texnlogiyalar:
+1. HTML
+2. scss/css
+3. Babel/VanillaJS
+
 
 Ayni vaqtdagi qilinishi kerak ishlar:
 1. Animatsiya effektlarini yaratish/ko'paytirish.
