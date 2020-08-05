@@ -54,7 +54,7 @@ Foydalanish:
 
 <h3>Misol uchun</h3>
 
-<h4>HTML blokni belgilaymiz(data-offset orqali.) uni ichida o'sha nuqtaga yetkandan keyin animatsiya bo'ladigan elemenlarga animatsiya turini va vaqtini belgilaymiz.</h4>
+<h4>HTML blokni belgilaymiz(data-threshold orqali.) ma'lum bir qismi( %da ) ekranda ko'ringanda animatsiya paydo bo'lishi belgilaymiz. qo'shimcha tarzda animatsiyalarni turini va vaqtini belgilaymiz.</h4>
 
 ```HTML
 <section class="sec4" data-threshold="1300">
