@@ -44,32 +44,33 @@ Foydalanish:
 
 3. so'nggi qadam bu asosiy JS kutubxonani ulash.
   ```HTML
-<script src="js/animate.js"></script>
-<script>
-	 const Animater = new animate(true);
-</script>
-```
-
+  <script src="js/animate.js"></script>
+  ```
 4. **animate**  obyektini hosil qiling.
+  ```HTML
+  <script>
+    const Animater = new animate(true);
+  </script>
+  ```
 
-<h3>Misol uchun</h3>
+  <h3>Misol uchun</h3>
 
-<h4>HTML blokni belgilaymiz(data-threshold orqali.) ma'lum bir qismi( %da ) ekranda ko'ringanda animatsiya paydo bo'lishi belgilaymiz. qo'shimcha tarzda animatsiyalarni turini va vaqtini belgilaymiz.</h4>
+  <h4>HTML blokni belgilaymiz(data-threshold orqali.) ma'lum bir qismi( %da ) ekranda ko'ringanda animatsiya paydo bo'lishi belgilaymiz. qo'shimcha tarzda animatsiyalarni turini va vaqtini belgilaymiz.</h4>
 
-```HTML
-<section class="sec4" data-threshold="1300">
-    <h2 class="animate" data-animations="fade-in">section 4</h2>
-    <div class="content animate" data-animations="fade-in s-2">content text</div>
-</section>
-```
+  ```HTML
+  <section class="sec4" data-threshold="1300">
+      <h2 class="animate" data-animations="fade-in">section 4</h2>
+      <div class="content animate" data-animations="fade-in s-2">content text</div>
+  </section>
+  ```
 
-<h4>Bu esa kutubxonani ulash uchun script tegi. </h4>
-```HTML
-<script src="js/animate.js"></script>
-<script>
-	 const Animater = new animate(true);
-</script>
-```
+  <h4>Bu esa kutubxonani ulash uchun script tegi. </h4>
+  ```HTML
+  <script src="js/animate.js"></script>
+  <script>
+    const Animater = new animate(true);
+  </script>
+  ```
 
 `#DEBUG(SETUP) mode ni yoqib kerakli animatsiyalarni sozlab olgandan keyin oddiy modega o'tkizing.`
 
