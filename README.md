@@ -76,7 +76,7 @@ Foydalanish:
 
 Demo fayl **demo** papkasida joylashgan yoki [Bu yerda](https://parmonov98.github.io/scrollAnimator/demo/)
 
-Agar o'zingizni animatsiya effektlarizni qo'shmoqchi bo'lsangiz, marhamat, **src** papka ichidagi **animate.css** fayldagi effektlar qo'shib push request qiling. 
+Agar o'zingizni animatsiya effektlarizni qo'shmoqchi bo'lsangiz, marhamat, **src** papka ichidagi **animate.css** faylga effektlar qo'shib push request qiling. 
 
 Proyekt uchun ishlatilgan texnlogiyalar:
 1. HTML
