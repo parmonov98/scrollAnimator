@@ -52,9 +52,6 @@ Foydalanish:
 
 4. **animate**  obyektini hosil qiling.
 
-Demo fayl **demo** papkasida joylashgan.
-
-
 <h3>Misol uchun</h3>
 
 <h4>HTML blokni belgilaymiz(data-offset orqali.) uni ichida o'sha nuqtaga yetkandan keyin animatsiya bo'ladigan elemenlarga animatsiya turini va vaqtini belgilaymiz.</h4>
@@ -76,6 +73,7 @@ Demo fayl **demo** papkasida joylashgan.
 
 `#DEBUG(SETUP) mode ni yoqib kerakli animatsiyalarni sozlab olgandan keyin oddiy modega o'tkizing.`
 
+Demo fayl **demo** papkasida joylashgan yoki [Bu yerda](https://parmonov98.github.io/scrollAnimator/demo/)
 
 Agar o'zingizni animatsiya effektlarizni qo'shmoqchi bo'lsangiz, marhamat, **src** papka ichidagi **animate.css** fayldagi effektlar qo'shib push request qiling. 
 
