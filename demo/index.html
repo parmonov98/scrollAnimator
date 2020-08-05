@@ -13,19 +13,19 @@
         <h2>section 1</h2>
         <div class="content">content text</div>
     </section>
-    <section class="sec2 animate" data-animations="to-right" data-offset="400">
+    <section class="sec2 animate" data-animations="to-right" data-threshold="100">
         <h2>section 2</h2>
         <div class="content">content text</div>
     </section>
-    <section class="sec3 animate" data-animations="to-left" data-offset="800">
+    <section class="sec3 animate" data-animations="to-left" data-threshold="80">
         <h2>section 3</h2>
         <div class="content">content text</div>
     </section>
-    <section class="sec4" data-offset="1300">
+    <section class="sec4" data-threshold="13">
         <h2 class="animate" data-animations="fade-in">section 4</h2>
         <div class="content animate" data-animations="fade-in s-2">content text</div>
     </section>
-    <section class="sec5" data-offset="1700" >
+    <section class="sec5" data-threshold="17" >
         <div class="view-3d">        
             <div class="skew-container animate" data-animations="skew">
                 <h2 class="animate" data-animations="pop-up s-1">section 5</h2>
@@ -33,19 +33,26 @@
             </div>
         </div>
     </section>
-    <section class="sec6 animate" data-animations="fade-in" data-offset="2000" >
+    <section class="sec6 animate" data-animations="fade-in" data-threshold="20" >
         <h2 class="animate" data-animations="pop-up s-1">section 6</h2>
         <div class="content">content text</div>
     </section>
-    <section class="sec7" data-offset="2300">
+    <section class="sec7" data-threshold="90">
         <h2>section 7</h2>
         <div class="content card animate" data-animations="glitch">content text</div>
+    </section>
+    <section class="sec8 animate" data-animations="zoom-in" data-threshold="100">
+        <h2>section 8</h2>
+        <div class="content">content text</div>
     </section>
 
     <script src="../dist/animate.js"></script>
 
     <script>
-    const a = new animate(false);   // false|hech narsa ni jo'nating production rejimda. :)
+
+    const a = new animate(true);   // false|hech narsa ni jo'nating production rejimda. :)
+
+
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /*!
- * animate.css -https://parmonov98.github.io/animate/
+ * animate.css -https://parmonov98.github.io/scrollAnimator/
  * Version - 1.0.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
@@ -18,6 +18,20 @@
    top: 0;
    left: 0;
    padding: 5px 10px;
+   color: #fff;
+}
+
+.threshold{
+   position: absolute;
+   display: inline-block;
+   min-height: 32px;
+   font-size: 1.5em;
+   line-height: 1.5em;
+   background-color: rgb(129, 80, 80);
+   z-index: 999;
+   top: 0;
+   left: 0;
+   padding: 5px 20px;
    color: #fff;
 }
 .modal-alert{
@@ -94,6 +108,12 @@
 .glitch{
    animation-name: glitch;
    animation-duration: .2s;
+   animation-fill-mode: forwards;
+}
+
+.zoom-in{
+   animation-name: zoom-in;
+   animation-duration: .5s;
    animation-fill-mode: forwards;
 }
 
@@ -235,5 +255,16 @@
    }
    100%{
       transform: translateX(0%);      
+   }
+}
+
+@keyframes zoom-in{
+   0%{
+      transform: scale(0);      
+   }
+   100%{
+      transform: scale(1);      
+      visibility: visible;
+      opacity: 1;
    }
 }
