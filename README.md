@@ -1,8 +1,10 @@
 # scrollAnimator
  Page scrollAnimator in VanillaJS
 
-birinchi o'rinda animate.css ichida joylashgan odat ko'p ishlatiladigan effectlar uchun classlar yaratilgan. 
-fade-in, to-left, to-top, to-right, to-bottom, skew, pop-up, glitch, zoom-in
+Animate.css ichida joylashgan odat ko'p ishlatiladigan effectlar uchun classlar yaratilgan. 
+
+
+`fade-in, to-left, to-top, to-right, to-bottom, skew, pop-up, glitch, zoom-in`
 
 Foydalanish:
 
